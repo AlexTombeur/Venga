@@ -2,3 +2,417 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+html, body {
+  font-family: 'Avenir Next';
+  background: #F1F1F1;
+}
+
+* {
+  font-family: 'Avenir Next';
+}
+
+
+.background{
+  background: url('Home1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 320px;
+}
+
+.phone1{
+  color:#2FC7AB;
+  font-size: 12px;
+}
+
+.nav-button{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 45px;
+}
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    content: "\f0c9";
+    color: #2FC7AB;
+}
+
+.dropdown-menu {
+  background-color: #F1F1F2;
+}
+
+.icon{
+  color:#2FC7AB;
+}
+
+.banner-top {
+  color: #F1F1F2;
+}
+
+.img1{
+  width: 40%;
+  height: 40%;
+  margin-left: 640px;
+  margin-bottom: 20px;
+  margin-top: 110px;
+}
+
+.frontline{
+  margin-bottom: 20px;
+  margin-left: 670px;
+  margin-right: 90px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+.sub-title {
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 27px;
+    padding-bottom: 18px;
+    margin-bottom: 68px;
+    color: #F1F1F1;
+    background-color: #2FC7AB;
+}
+
+element.style {
+  color: #2FC7AB;
+  margin-left: 35px;
+}
+
+.vp{
+  background-color: #F2F2F2;
+}
+
+.mock{
+  width: 85%;
+  height: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img2 {
+ width: 58%;
+ height: 58%;
+ margin-top: 91px;
+ padding-left: 68px;
+}
+
+
+
+.cont {
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.card{
+  margin-bottom: 40px;
+  width: 25%;
+  color: #1A2A3A;
+  padding-bottom: 18px;
+  margin-right: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+
+}
+
+.card1{
+  margin-bottom: 40px;
+  width: 25%;
+  color: #1A2A3A;
+  padding-bottom: 18px;
+  margin-right: 10px;
+  margin-left: 137px;
+  border-radius: 10px;
+
+}
+
+.row{
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+.card-expl{
+    padding: 14px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.imag1{
+    border:2px solid #2FC7AB;
+    border-radius:50px;
+    width:75px;
+    height:75px;
+    padding: 19px;
+    display: inline-block;
+}
+.imag2{
+    border:2px solid #2FC7AB;
+    border-radius:50px;
+    width:75px;
+    height:75px;
+    padding: 23px;
+    display: inline-block;
+}
+
+.background2{
+  background: url('trainer1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 400px;
+  height: 100%;
+}
+
+.easy {
+  margin-top: 65px;
+  text-align: center;
+}
+
+
+.argu1{
+    margin-top: 81px;
+    margin-right: 56px;
+    margin-left: 58px;
+    width: 45%;
+}
+
+.argu2{
+  margin-top: 20px;
+  border-color: white;
+}
+
+.boost{
+  margin-bottom: 45px;
+}
+
+.btn{
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: #2FC7AB;
+  border-radius: 30px;
+}
+
+.form{
+  background-color: #1A2A3A;
+  margin-left: 75px;
+  margin-right: 75px;
+  color: #F1F1F1;
+  padding: 40px;
+}
+
+#mc_embed_signup{
+  margin: 0 auto;
+}
+
+.back{
+  background-color: #F1F1F1;
+  padding-top: 80px;
+  padding-bottom: 75px;
+}
+
+.interest{
+margin-bottom: 10px;
+
+}
+
+.title2 {
+  margin-bottom: 40px;
+  color: #F1F1F1;
+}
+
+.title3 {
+margin-top: 25px;
+justify-content: center;
+}
+
+.radioo {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Iam{
+  margin-right: 10px;
+}
+
+.email {
+  margin-bottom: 15px;
+}
+
+.filling {
+    width: 30%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    margin-top: 10px;
+}
+
+.press {
+  margin-top: 20px;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #1A2A3A;
+  justify-content: space-between;
+}
+
+.copyright{
+  color: #9E9E9E;
+  font-size: 12px;
+  margin-left: 85px;
+}
+
+.infos{
+  color: #2FC7AB;
+  margin-left: 620px;
+}
+
+.hello {
+  color: #2FC7AB;
+  font-size: 30px;
+  margin-left: 13px;
+  margin-right: 15px;
+}
+
+.phone{
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-right: 85px;
+}
+
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  color: #F1F1F1;
+  font-weight: 500;
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  color: #F1F1F1;
+  border-color: #1A2A3A;
+}
+
+.list-inline {
+    display: flex;
+}
+
+.banner-middle {
+  background-color: #F1F1F2;
+  color: #1A2A3A;
+  padding-bottom: 20px;
+}
