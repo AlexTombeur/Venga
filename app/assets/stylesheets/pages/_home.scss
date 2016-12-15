@@ -54,14 +54,14 @@ html, body {
 .img1{
   width: 40%;
   height: 40%;
-  margin-left: 640px;
+  margin-left: 51%;
   margin-bottom: 20px;
   margin-top: 110px;
 }
 
 .frontline{
   margin-bottom: 20px;
-  margin-left: 670px;
+  margin-left: 53%;
   margin-right: 90px;
   font-size: 24px;
   font-weight: 400;
@@ -213,6 +213,14 @@ element.style {
 
 #mc_embed_signup{
   margin: 0 auto;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+    color: gray;
 }
 
 .back{
