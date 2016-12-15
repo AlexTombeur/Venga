@@ -98,7 +98,7 @@ element.style {
 .img2 {
  width: 58%;
  height: 58%;
- margin-top: 91px;
+ margin-top: 93px;
  padding-left: 68px;
 }
 
@@ -124,10 +124,10 @@ element.style {
 
 .card1{
   margin-bottom: 40px;
-  width: 25%;
+  width: 26%;
   color: #1A2A3A;
   padding-bottom: 18px;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-left: 137px;
   border-radius: 10px;
 
@@ -142,6 +142,7 @@ element.style {
     padding: 14px;
     margin-right: 40px;
     margin-left: 40px;
+    margin-top: 5px;
 }
 
 .imag1{
@@ -179,10 +180,11 @@ element.style {
 
 
 .argu1{
-    margin-top: 81px;
-    margin-right: 56px;
-    margin-left: 58px;
+    margin-top: 70px;
+    margin-right: 50px;
+    margin-left: 40px;
     width: 45%;
+    font-size: 14px;
 }
 
 .argu2{
@@ -198,7 +200,7 @@ element.style {
   margin-top: 6px;
   margin-bottom: 16px;
   background-color: #2FC7AB;
-  border-radius: 30px;
+  border-radius: 4px;
 }
 
 .form{
@@ -206,7 +208,7 @@ element.style {
   margin-left: 75px;
   margin-right: 75px;
   color: #F1F1F1;
-  padding: 40px;
+  padding: 36px;
 }
 
 #mc_embed_signup{
@@ -227,6 +229,7 @@ margin-bottom: 10px;
 .title2 {
   margin-bottom: 40px;
   color: #F1F1F1;
+  font-family: 'Avenir Next';
 }
 
 .title3 {
@@ -237,6 +240,50 @@ justify-content: center;
 .radioo {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+#mc_embed_signup .mc-field-group.input-group label {
+    display: inline;
+    margin-left: 10px;
+}
+
+#mc_embed_signup .mc-field-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: inherit;
+}
+
+.Iamm{
+margin: none;
+}
+
+.buton {
+    clear: both;
+    background-color: #2FC7AB;
+    border: 0 none;
+    border-radius: 4px;
+    transition: all 0.23s ease-in-out 0s;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 0px 10px 0;
+    padding: 0 22px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
+
+#mc-embedded-subscribe {
+    clear: both;
+    width: auto;
+    display: block;
+    margin: 0em 0 0em 0%;
 }
 
 .Iam{
@@ -285,7 +332,7 @@ justify-content: center;
 
 .infos{
   color: #2FC7AB;
-  margin-left: 620px;
+
 }
 
 .hello {
