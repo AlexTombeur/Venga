@@ -32,7 +32,7 @@ html {
 .banner {
   color: white;
   text-align: center;
-  height: 38vh;
+  height: 25vh;
   background-size: cover !important;
   display: flex;
   align-items: center;
@@ -42,12 +42,13 @@ html {
   font-size: 50px;
   font-weight: bold;
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
 }
 .banner p {
   font-size: 25px;
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .banner .btn {
   margin-top: 20px;
@@ -75,6 +76,19 @@ html {
     color: #1A2A3A;
 }
 
+.price{
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 20%;
+}
+
+.picture {
+  border-radius: 50%;
+  border: #D9D9D9 1.5px solid;
+  size: 25%;
+}
+
 .contact{
 margin-left: 3px;
 }
@@ -87,16 +101,26 @@ margin-left: 3px;
   font-size: 14px;
 }
 
+.moreinfo{
+  width: 100%;
+  margin-top: 163px;
+  background-color: #2FC7AB;
+  margin-bottom: none;
+  border-radius: 0 0 4px 4px;
+  color: #F1F1F1;
+}
+
 .card {
-  height: 250px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  height: 370px;
   background-size: cover !important;
-  color: white;
+  color: #1A2A3A;
+  background-color: #F1F1F1;
   position: relative;
   border-radius: 5px;
   width: 600px;
   margin-left: 15px;
   margin-right: 10px;
+  border: solid 1px #D9D9D9;
 }
 .card-user {
   position: absolute;
@@ -105,14 +129,15 @@ margin-left: 3px;
 }
 .card-category {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 25px;
   font-size: 25px;
 }
 .card-description {
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 14px;
+  margin-bottom: 50px;
 }
 .card-description h2 {
   font-size: 24px;

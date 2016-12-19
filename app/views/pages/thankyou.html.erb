@@ -1,29 +1,39 @@
 
-    <div class="banner" style="background: linear-gradient(-225deg, #2FC7AB 0%, #1A2A3A 95%), url('background.jpg');">
+    <div class="banner" style="background: linear-gradient(-225deg, #2FC7AB 0%, #1A2A3A 95%), url('');">
 
 
       <div class="banner-content">
-        <div id="nav-button" class="fb-like" data-href="https://www.facebook.com/bevenga/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
         <h1>WELCOME VENGY !</h1>
         <p>It's time to enjoy a unique sport experience with your coach.</p>
       </div>
     </div>
 
-    <h2 class="subsub text-center">Your next workout in Brussels</h2>
+    <h3 class="subsub text-center">Your next workout in Brussels</h3>
 
     <div class="container list-inline">
-      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/Home1.jpg');">
+      <div class="card">
         <div class="card-category">Virginie</div>
+          <div class="list-inline">
+          <!--   <div class="picture">
+              <img class="card-user avatar avatar-large" src="images/Alex.png">
+              <a class="card-link" href="#" ></a>
+            </div> -->
 
+            <div class="price list-inline">
+              <%= image_tag("Alex.png", :alt => "rss feed", :height => "100%", :width => "35%", class: "picture") %>
+              <h4>30€ / hour</h4>
+            </div>
+          </div>
         <div class="card-description">
-          <h2>Paillard's home</h2>
+          <p>Certified personal trainer with 10+ years experience as a fitness coach. I specialise in functional and core muscles training. </p>
           <div class="contact list-inline">
             <p>0499/17.23.14</p>
             <div class="mail"><p>virginie@gmail.com</p></div>
           </div>
         </div>
-        <img class="card-user avatar avatar-large" src="app/assets.images/papillard.jpeg">
-        <a class="card-link" href="#" ></a>
+          <form class="moreif">
+            <input class="btn moreinfo" type="button" value="More infos" onclick="window.location.href=''" />
+          </form>
       </div>
 
       <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-background.jpeg');">
