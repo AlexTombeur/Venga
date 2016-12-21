@@ -19,7 +19,20 @@
 
     <div class="container list-inline">
       <div class="card">
-        <div class="card-category">Alex</div>
+        <div class="card-category">
+          <div class=" line1 list-inline">
+            <h3>Alex</h3>
+              <div class="flags">
+                <%= image_tag("fr.png", :alt => "rss feed", :height => "40%", :width => "40%", class: "") %>
+                <%= image_tag("en.png", :alt => "rss feed", :height => "40%", :width => "40%", class: "") %>
+              </div>
+          </div>
+          <div class="list-inline">
+            <%= image_tag("location.png", :alt => "rss feed", :height => "5%", :width => "5%", class: "location") %>
+            <p>Brussels (Ixelles)</p>
+          </div>
+          <hr class="hr--small">
+        </div>
 
           <div class="price list-inline">
             <%= image_tag("Alex2.png", :alt => "rss feed", :height => "103%", :width => "35%", class: "picture") %>

@@ -78,11 +78,26 @@ html {
     color: #1A2A3A;
 }
 
+.line1{
+ justify-content: space-between;
+ margin-right: 17px;
+ align-items: center;
+}
+
+.flags{
+  margin-left: 65%;
+  margin-right: 5px;
+}
+
+.location{
+  margin-right: 5px;
+}
+
 .price{
   justify-content: space-between;
   margin-left: 20px;
-  margin-right: 10px;
-  margin-top: 20%;
+  margin-right: 25px;
+  margin-top: 38%;
 }
 
 .picture {
@@ -105,7 +120,7 @@ margin-left: 3px;
 
 .moreinfo{
   width: 100%;
-  margin-top: 150px;
+  margin-top: 110px;
   background-color: #2FC7AB;
   margin-bottom: none;
   border-radius: 0 0 4px 4px;
@@ -131,15 +146,20 @@ margin-left: 3px;
 }
 .card-category {
   position: absolute;
-  top: 15px;
+  top: 5px;
   left: 25px;
   font-size: 25px;
 }
+
+.card-category, p{
+  font-size: 15px;
+}
+
 .card-description {
   position: absolute;
   bottom: 10px;
   left: 14px;
-  margin-bottom: 50px;
+  margin-bottom: 8px;
 }
 .card-description h2 {
   font-size: 24px;
@@ -158,6 +178,24 @@ margin-left: 3px;
 }
 .card-link:hover{
   opacity: 0.1;
+}
+
+.hr--small {
+    margin: 10px auto;
+    color: black;
+}
+
+hr, .hr--small, .hr--medium, .hr--large {
+    border-width: 1px 0 0 0;
+    width: 60px;
+}
+
+hr {
+    clear: both;
+    border-top: solid #1c1d1d;
+    border-width: 1px 0 0;
+
+    height: 0;
 }
 
 .footer {
