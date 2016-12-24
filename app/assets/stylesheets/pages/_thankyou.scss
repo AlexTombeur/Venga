@@ -97,7 +97,7 @@ html {
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 25px;
-  margin-top: 38%;
+  margin-top: 39%;
 }
 
 .picture {
@@ -107,13 +107,12 @@ html {
 }
 
 .contact{
-
-background-color: #2FC7AB;
-padding-left: 3px;
+  margin-left: 2px;
+  margin-top: 10px;
 }
 
 .mail {
-  margin-left: 10%;
+  padding-left: 10%;
 }
 
 .location{
@@ -124,16 +123,6 @@ padding-left: 3px;
   font-size: 2px;
 }
 
-
-.moreinfo{
-  width: 100%;
-  margin-top: 110px;
-  background-color: #2FC7AB;
-  margin-bottom: none;
-  border-radius: 0 0 4px 4px;
-  color: #F1F1F1;
-}
-
 .card {
   height: 410px;
   background-size: cover !important;
@@ -142,7 +131,6 @@ padding-left: 3px;
   position: relative;
   border-radius: 5px;
   width: 600px;
-  margin-left: 15px;
   margin-right: 10px;
   border: solid 1px #D9D9D9;
 }
@@ -160,9 +148,8 @@ padding-left: 3px;
 
 .card-description {
   position: absolute;
-  bottom: 10px;
   left: 14px;
-  margin-bottom: 8px;
+  margin-top: 30px;
 }
 .card-description h2 {
   font-size: 24px;
@@ -170,18 +157,7 @@ padding-left: 3px;
 .card-description p {
   font-size: 16px;
 }
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index:2;
-  background: black;
-  opacity: 0;
-}
-.card-link:hover{
-  opacity: 0.1;
-}
+
 
 .hr--small {
     margin: 10px auto;
