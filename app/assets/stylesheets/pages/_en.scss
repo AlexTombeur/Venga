@@ -12,13 +12,6 @@ html, body {
   font-family: 'Avenir Next';
 }
 
-.lang{
-  justify-content: space-between;
-}
-
-.english{
-  margin-left: 5%;
-}
 
 .background{
   background: url('Home1.jpg') no-repeat center center fixed;
@@ -28,6 +21,14 @@ html, body {
   background-size: cover;
   padding-top: 20px;
   padding-bottom: 320px;
+}
+
+.lang{
+  justify-content: space-between;
+}
+
+.french{
+  margin-left: 20%;
 }
 
 .hvr-grow {
@@ -88,7 +89,7 @@ html, body {
   height: 40%;
   margin-left: 51%;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 115px;
 }
 
 .frontline{
@@ -97,7 +98,6 @@ html, body {
   margin-right: 90px;
   font-size: 24px;
   font-weight: 400;
-  font-family: 'Permanent Marker', cursive;
 }
 
 
@@ -152,6 +152,7 @@ element.style {
   margin-right: 10px;
   margin-left: 20px;
   border-radius: 10px;
+
 }
 
 .card1{
