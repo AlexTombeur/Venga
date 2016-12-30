@@ -12,6 +12,10 @@ html, body {
   font-family: 'Avenir Next';
 }
 
+h1, h2, h3{
+  font-family: 'Avenir Next';
+}
+
 .lang{
   justify-content: space-between;
 }
@@ -91,11 +95,9 @@ html, body {
   margin-top: 10px;
 }
 
-.frontline{
+.frontline, h1{
   margin-bottom: 20px;
-  margin-left: 53%;
-  margin-right: 90px;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 400;
 }
 
