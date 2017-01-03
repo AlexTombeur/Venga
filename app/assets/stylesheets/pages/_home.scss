@@ -236,6 +236,10 @@ element.style {
     width: 100%;
     display: inline;
   }
+  .footer .col-md-12 {
+    max-width: 315px;
+    font-size: 15px;
+  }
 }
 
 #mc_embed_signup .mc-field-group input {
