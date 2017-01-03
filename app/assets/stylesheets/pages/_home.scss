@@ -235,10 +235,18 @@ element.style {
   .find-btn {
     width: 100%;
     display: inline;
+    font-size: 15px;
   }
   .footer .col-md-12 {
     max-width: 315px;
     font-size: 15px;
+  }
+  .card {
+    min-height: 430px;
+    max-height: 460px !important;
+  }
+  .location {
+    margin-top: 5px;
   }
 }
 
@@ -487,7 +495,7 @@ margin: none;
 }
 
 .list-inline {
-    display: flex;
+  display: flex;
 }
 
 .banner-middle {
@@ -506,4 +514,7 @@ margin: none;
 
 .french {
   margin-left: 20%;
+}
+.card-category .list-inline {
+  margin-left: 3%;
 }
