@@ -249,7 +249,17 @@ element.style {
     margin-top: 5px;
   }
 }
-
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .card {
+    max-height: none !important;
+  }
+}
+@media only screen and (max-width: 1310px) and (min-width: 765px) {
+  .card {
+    max-height: 415px !important;
+    overflow-y: auto;
+  }
+}
 #mc_embed_signup .mc-field-group input {
     display: block;
     width: 100%;
