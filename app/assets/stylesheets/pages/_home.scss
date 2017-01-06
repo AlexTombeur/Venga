@@ -78,21 +78,8 @@ h1, h2, h3{
   color:#2FC7AB;
 }
 
-.find{
-  margin-left: 53%;
-  width: 476px;
-}
-
 .banner-top {
   color: #F1F1F2;
-}
-
-.img1{
-  width: 40%;
-  height: 40%;
-  margin-left: 51%;
-  margin-bottom: 20px;
-  margin-top: 10px;
 }
 
 .frontline, h1{
@@ -103,13 +90,13 @@ h1, h2, h3{
 
 
 .sub-title {
-    font-weight: 500;
-    font-size: 18px;
-    padding-top: 27px;
-    padding-bottom: 18px;
-    margin-bottom: 68px;
-    color: #F1F1F1;
-    background-color: #2FC7AB;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 27px;
+  padding-bottom: 18px;
+  margin-bottom: 68px;
+  color: #F1F1F1;
+  background-color: #2FC7AB;
 }
 
 element.style {
@@ -130,45 +117,32 @@ element.style {
 }
 
 .img2 {
- width: 58%;
- height: 58%;
  margin-top: 93px;
- padding-left: 68px;
 }
 
-
-
 .cont {
-  background-color: #F1F1F1;
-  width: 100%;
-  height: 100%;
+  margin-top: 30px;
   padding-top: 20px;
 }
 
 .card{
   margin-bottom: 40px;
-  width: 31%;
   color: #1A2A3A;
   padding-bottom: 18px;
   margin-right: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   border-radius: 10px;
 }
 
 .card1{
     margin-bottom: 40px;
-    width: 26%;
     color: #1A2A3A;
     padding-bottom: 18px;
-    margin-right: 0px;
-    margin-left: 73px;
-    border-radius: 10px;
-
+    text-align: center;
 }
 
 .row{
-  margin-bottom: 5px;
-  margin-top: 40px;
+  margin: 0;
 }
 
 .card-expl{
@@ -213,11 +187,8 @@ element.style {
 
 
 .argu1{
-    margin-top: 70px;
-    margin-right: 50px;
-    margin-left: 40px;
-    width: 45%;
-    font-size: 14px;
+  margin-top: 70px;
+  font-size: 14px;
 }
 
 .argu2{
@@ -229,18 +200,26 @@ element.style {
   margin-bottom: 45px;
 }
 
-.btn{
+.prime-btn {
   margin-top: 6px;
   margin-bottom: 16px;
   background-color: #2FC7AB;
   border-radius: 4px;
 }
 
+.find-btn {
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: #2FC7AB;
+  border-radius: 4px;
+  width: 90%;
+}
+
 .form{
   background-color: #1A2A3A;
   border-radius: 8px;
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 6%;
+  margin-right: 6%;
   color: #F1F1F1;
   padding: 36px;
 }
@@ -249,6 +228,38 @@ element.style {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 600px) {
+  #mc_embed_signup {
+    width: 85% !important;
+  }
+  .find-btn {
+    width: 100%;
+    display: inline;
+    font-size: 15px;
+  }
+  .footer .col-md-12 {
+    max-width: 315px;
+    font-size: 15px;
+  }
+  .card {
+    min-height: 430px;
+    max-height: 460px !important;
+  }
+  .location {
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .card {
+    max-height: none !important;
+  }
+}
+@media only screen and (max-width: 1310px) and (min-width: 765px) {
+  .card {
+    max-height: 415px !important;
+    overflow-y: auto;
+  }
+}
 #mc_embed_signup .mc-field-group input {
     display: block;
     width: 100%;
@@ -369,7 +380,6 @@ margin: none;
 .copyright{
   color: #9E9E9E;
   font-size: 12px;
-  margin-left: 85px;
 }
 
 .infos{
@@ -386,8 +396,6 @@ margin: none;
 
 .phone{
   margin-top: 5px;
-  margin-left: 8px;
-  margin-right: 85px;
 }
 
 @-webkit-keyframes hvr-buzz-out {
@@ -497,11 +505,26 @@ margin: none;
 }
 
 .list-inline {
-    display: flex;
+  display: flex;
 }
 
 .banner-middle {
   background-color: #F1F1F2;
   color: #1A2A3A;
   padding-bottom: 20px;
+}
+
+.title {
+  margin: 100px 0 0 0;
+}
+
+.subtitle {
+  margin-left: 3%;
+}
+
+.french {
+  margin-left: 20%;
+}
+.card-category .list-inline {
+  margin-left: 3%;
 }

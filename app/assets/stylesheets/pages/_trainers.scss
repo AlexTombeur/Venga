@@ -89,8 +89,7 @@ html {
 }
 
 .flags{
-  margin-left: 45%;
-  margin-right: 5px;
+  margin-top: 28px;
 }
 
 .location{
@@ -101,7 +100,6 @@ html {
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 25px;
-  margin-top: 39%;
 }
 
 .picture {
@@ -128,14 +126,12 @@ html {
 }
 
 .card {
-  height: 410px;
+  max-height: 430px;
   background-size: cover !important;
   color: #1A2A3A;
   background-color: #F1F1F1;
   position: relative;
   border-radius: 5px;
-
-  margin-right: 10px;
   border: solid 1px #D9D9D9;
 }
 .card-user {
@@ -144,16 +140,12 @@ html {
   top: 10px;
 }
 .card-category {
-  position: absolute;
-  top: 5px;
-  left: 25px;
+  padding-left: 8%;
 }
 
 
 .card-description {
-  position: absolute;
-  left: 14px;
-  margin-top: 30px;
+  margin: 30px 10px;
 }
 .card-description h2 {
   font-size: 24px;
@@ -188,12 +180,6 @@ hr {
   justify-content: space-between;
 }
 
-.copyright{
-  color: #9E9E9E;
-  font-size: 12px;
-  margin-left: 85px;
-}
-
 .infos{
   color: #2FC7AB;
 
@@ -208,6 +194,4 @@ hr {
 
 .phone{
   margin-top: 5px;
-  margin-left: 8px;
-  margin-right: 85px;
 }
