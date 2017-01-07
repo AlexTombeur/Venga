@@ -25,7 +25,7 @@ h1, h2, h3{
 }
 
 .background{
-  background: url('Home1.jpg') no-repeat center center fixed;
+  background: url('Home1.jpg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -165,12 +165,12 @@ element.style {
     border-radius:50px;
     width:75px;
     height:75px;
-    padding: 23px;
+    padding: 22px;
     display: inline-block;
 }
 
 .background2{
-  background: url('trainer1.jpg') no-repeat center center fixed;
+  background: url('trainer1.jpg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
