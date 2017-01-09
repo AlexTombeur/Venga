@@ -11,7 +11,11 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://www.be-venga.com/thankyou</loc>
+  <loc>http://www.be-venga.com/en</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.be-venga.com/trainers</loc>
   <changefreq>daily</changefreq>
 </url>
 </urlset>
