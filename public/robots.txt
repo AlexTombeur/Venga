@@ -1,1 +1,3 @@
-
+    User-Agent: *
+    Allow: /
+    Sitemap: http://be-venga.com/sitemap.xml
