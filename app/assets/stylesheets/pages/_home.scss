@@ -249,15 +249,22 @@ element.style {
     margin-top: 5px;
   }
 }
-@media only screen and (max-width: 900px) and (min-width: 600px) {
+@media only screen and (max-width: 765px) and (min-width: 600px) {
   .card {
     max-height: none !important;
   }
 }
-@media only screen and (max-width: 1310px) and (min-width: 765px) {
+@media only screen and (max-width: 1400px) and (min-width: 765px) {
   .card {
-    max-height: 415px !important;
-    overflow-y: auto;
+    max-height: 460px !important;
+    overflow: auto;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .card {
+    height: 490px !important;
+    max-height: none !important;
+    overflow: scroll;
   }
 }
 #mc_embed_signup .mc-field-group input {
