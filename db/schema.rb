@@ -10,9 +10,68 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170124154902) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "contacts", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "email"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "offers", force: :cascade do |t|
+    t.integer  "price"
+    t.string   "description"
+    t.string   "frequency"
+    t.integer  "trainer_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["trainer_id"], name: "index_offers_on_trainer_id", using: :btree
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string   "description"
+    t.string   "client_name"
+    t.integer  "trainer_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["trainer_id"], name: "index_reviews_on_trainer_id", using: :btree
+  end
+
+  create_table "trainers", force: :cascade do |t|
+    t.integer  "price"
+    t.string   "city"
+    t.string   "picture"
+    t.string   "description"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "name"
+    t.string   "surname"
+    t.boolean  "france"
+    t.boolean  "espagne"
+    t.boolean  "angleterre"
+    t.boolean  "portugal"
+    t.boolean  "pays_bas"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "specialities"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "login"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "offers", "trainers"
+  add_foreign_key "reviews", "trainers"
 end

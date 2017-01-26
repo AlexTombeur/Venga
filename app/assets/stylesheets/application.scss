@@ -1,4 +1,7 @@
+
+
 // Graphical variables
+
 @import "config/variables";
 @import "config/bootstrap_variables";
 
@@ -7,9 +10,21 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import 'ionicons';
+
 
 // Your CSS
 @import "layout/index";
 @import "components/index";
 @import "pages/index";
 @import "vendor/index";
+
+// Vendor Home page
+
+@import "flexslider";
+@import "jquery-ui";
+@import "owl.carousel";
+@import "style";
+
+
+
