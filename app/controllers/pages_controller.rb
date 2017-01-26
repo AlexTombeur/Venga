@@ -1,12 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @contact = Contact.new
+    @trainers = Trainer.all
   end
-
-  def en
-  end
-
-  def thankyou
-
-  end
-
 end
