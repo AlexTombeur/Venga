@@ -23,7 +23,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  config.assets.compile = false
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -54,7 +54,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "Venga_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "venga-final_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
@@ -83,4 +83,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "venga-final.herokuapp.com" }
+
+
 end

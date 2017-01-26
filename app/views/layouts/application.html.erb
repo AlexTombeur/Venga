@@ -1,70 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Venga - A perfect workout, just like you !</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Venga connects you with personal trainers offering unique sport experiences in Brussels. It's time to enjoy your workout ! ">
-
-    <meta property=“og:title” content=“Venga - A perfect workout, just like you.”>
-    <meta property="og:type" content="www.be-venga.com" />
-    <meta property="og:url" content="http://www.be-venga.com" />
-    <meta property=“og:image” content=“metavenga.png”>
-    <meta property=“og:description” content=“Venga connects you with personal trainers offering unique sport experiences in Brussels. It's time to enjoy your workout !”>
-    <meta property="og:site_name" content="Venga" />
-
-    <meta name="google-site-verification" content="auNpT9NLbOWk-7Q8a1SZeGqwtIH97ukOtMDGutlsT_4" />
-
+    <title>TODO</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
-
   </head>
   <body>
-    <div id="fb-root"></div>
+
+  <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8&appId=1845234315688643";
       fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <%= yield %>
-
-    <div class="footer list-inline row">
-      <div class="col-md-12">
-        <div class="copyright col-md-6">
-          <p>Copyright @ Venga 2017 - All rights reserved</p>
-        </div>
-        <div class="infos list-inline pull-right">
-          <a href="https://www.facebook.com/bevenga">
-            <i class="fa fa-facebook hello"></i>
-          </a>
-          <a href="https://plus.google.com/u/0/112317262085738282278">
-            <i class="fa fa-google-plus hello"></i>
-          </a>
-          <a href="mailto:alexandre.tombeur@gmail.com?subject=Info Venga">
-            <i class="fa fa-envelope hello" aria-hidden="true"></i>
-          </a>
-          <p class="phone">+32(0)498/26.58.23</p>
-        </div>
-      </div>
-    </div>
-
-    <%= javascript_include_tag 'application' %>
-  </body>
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89250384-1', 'auto');
-  ga('send', 'pageview');
-
+    }(document, 'script', 'facebook-jssdk'));
   </script>
 
+    <%= yield %>
+    <%= render 'shared/footer' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag "https://maps.google.com/maps/api/js?signed_in=true&libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}" %>
+    <%= yield(:after_js) %>
+  </body>
+
 </html>
+
+
