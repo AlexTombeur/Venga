@@ -1,0 +1,83 @@
+    <!-- Search Overlay Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="ion ion-ios-close-empty"></i></span>
+        <form role="search" id="searchform" action="/search" method="get">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit"><i class="ion ion-ios-search"></i></button>
+        </form>
+    </div>
+    <!-- End Search Overlay Menu -->
+
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <header id="header" class="header">
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="logo">
+                   <%= link_to root_path do %>
+                  <img src="http://img11.hostingpics.net/pics/696329venga2.png", class="logo-dark", alt="Venga">
+                  <img src="http://img11.hostingpics.net/pics/696329venga2.png", class="logo-white", alt="Venga">
+                  <% end %>
+                </div>
+                <!-- End Logo -->
+            </div>
+        </header>
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+        <!-- Intro Section -->
+        <section class="inner-intro bg-image overlay-light parallax parallax-background1" data-background-img="http://www.be-venga.com/assets/banner1.jpg">
+            <div class="container">
+                <div class="row title">
+                    <h2 class="h2">Welcome Vengy</h2>
+                    <p class="dark">It's time to enjoy a unique sport experience with your coach</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Intro Section -->
+
+        <section id="elements" class="section-padding ptb ptb-sm-80">
+          <div class="container text-center">
+            <h3 class="page-title">Vos coachs sportifs</h3>
+          </div>
+          <div class="container">
+            <div class="tabs-cont">
+
+              <div id="tab-cover-box" class="tab-pane active">
+                <div class="container">
+                  <div class="row">
+                  <% @trainers.each do |trainer| %>
+                    <div class="col-md-4">
+                      <div class="cover-box mb-30">
+                        <figure class="cover-box-img">
+                          <img src="http://placehold.it/634x400" alt="cover-img">
+                        </figure>
+                        <div class="cover-box-content">
+                          <h5><%= trainer.surname %> <%= trainer.name %></h5>
+                          <p><%= trainer.description.first(100) %>...</p>
+                          <%= link_to 'Read More', trainer_path(trainer), class:"link fa fa-angle-right right" %>
+                        </div>
+                      </div>
+                    </div>
+                  <% end %>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->

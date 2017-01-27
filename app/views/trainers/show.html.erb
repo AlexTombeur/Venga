@@ -1,0 +1,141 @@
+
+    <!-- Search Overlay Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="ion ion-ios-close-empty"></i></span>
+        <form role="search" id="searchform" action="/search" method="get">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit"><i class="ion ion-ios-search"></i></button>
+        </form>
+    </div>
+    <!-- End Search Overlay Menu -->
+
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="header header-light">
+            <div class="container header-inner">
+
+                <!-- Logo -->
+                <div class="logo">
+                  <%= link_to root_path do %>
+                  <img src="http://img11.hostingpics.net/pics/696329venga2.png", class="logo-dark", alt="Venga">
+                  <img src="http://img11.hostingpics.net/pics/696329venga2.png", class="logo-white", alt="Venga">
+                  <% end %>
+                </div>
+                <!-- End Logo -->
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+<!-- Team Slider Section -->
+
+<section class="ptb ptb-sm-80">
+  <div class="container">
+    <div class="row text-center">
+      <h3><%= @trainer.surname%> <%= @trainer.name %></h3>
+    </div>
+    <div class="spacer-60"></div>
+    <div class="row">
+      <!-- Team Slider -->
+
+
+        <div class="col-md-4">
+          <div class="team-item nf-col-padding">
+            <div class="team-item-img">
+              <img src="<%= @trainer.picture %>"  alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <p class="lead"><%= @trainer.description %></p>
+          <br>
+          <p><i class="fa fa-map-marker" aria-hidden="true"></i> <%= @trainer.address %></p>
+          <br>
+          <p class="lead dark"><%= @trainer.email %></p>
+          <p class="lead dark"><%= @trainer.phone %></p>
+          <br>
+          <div class="sidebar-widget">
+            <h5>Specialités</h5>
+            <hr />
+            <ul class="widget-tag">
+              <% @liste.each do |specialite|%>
+              <li><a><%= specialite%></a></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+        <!-- Testimonials -->
+        <section id="testimonial" class="overlay-dark80 dark-bg ptb ptb-sm-80" style="background-image: url('img/full/25.jpg');" data-stellar-background-ratio="0.4">
+          <div class="container">
+            <div class="owl-carousel testimonial-carousel nf-carousel-theme white">
+              <% @trainer.reviews.each do |review| %>
+              <div class="item">
+                <div class="testimonial text-center dark-color">
+                  <div class="container-icon"><i class="fa fa-quote-right"></i></div>
+                  <p class="lead">" <%= review.description %>"</p>
+                  <h6 class="quote-author"><%= review.client_name %></h6>
+                </div>
+              </div>
+              <% end %>
+            </div>
+          </div>
+        </section>
+        <!-- End Testimonials -->
+
+
+
+        <!-- Pricing Table Section -->
+        <section class="ptb ptb-sm-80">
+            <div class="container text-center">
+                <div class="spacer-60"></div>
+                <div class="row">
+                <% @trainer.offers.each do |offer| %>
+                    <div class="col-md-4 mb-30">
+                        <div class="Pricing-box">
+                            <div class="pricing-features spacing-grid">
+                                <p><%= offer.description %></p>
+                            </div>
+                            <hr>
+                            <div class="spacing-box">
+                              <div class="price"><span class="price-sm">€</span><span class="price-lg"><%= offer.price %></span></div>
+                              <div class="price-tenure">per <%= offer.frequency %></div>
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                  <% end %>
+                </div>
+                <div class="spacer-30"></div>
+            </div>
+        </section>
+
+        <!-- End Pricing Table Section -->
+
+        <!-- End CONTENT ------------------------------------------------------------------------------>
+
+
+
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+

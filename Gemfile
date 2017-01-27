@@ -16,10 +16,17 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+
+gem 'ionicons-rails'
+gem "geocoder"
+gem 'mail_form'
+gem 'sendgrid'
+gem 'coffee-rails'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
-  
+
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
