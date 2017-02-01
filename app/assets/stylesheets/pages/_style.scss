@@ -4,6 +4,7 @@
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans);
 
 /*
 * BASIC STYLE
@@ -75,7 +76,7 @@ body {
     line-height: 24px;
     color: #323232;
     font-size: 13px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -270,7 +271,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
     color: #323232;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -360,7 +361,7 @@ h1.large {
     font-size: 12px;
     line-height: normal;
     font-weight: 700;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
@@ -543,7 +544,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 button, input, textarea, select {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
 
@@ -588,7 +589,7 @@ button, input, textarea, select {
 
 input, textarea, select {
     margin-bottom: 20px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
 
@@ -608,7 +609,7 @@ label {
     padding-right: 3px;
     margin-top: 6px;
     font-weight: 600;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .form-full {
@@ -1312,7 +1313,7 @@ form label.error {
     -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
-    font-family: "Raleway",sans-serif;
+    font-family: "Montserrat",sans-serif;
 }
 
 .nav-menu ul.nav-menu-inner > li > a {
@@ -1670,7 +1671,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         font-weight: 700;
         text-align: center;
         line-height: 14px;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .cart:hover .cart-dropdown {
@@ -3454,7 +3455,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
             letter-spacing: 2px;
             font-size: 12px;
             font-weight: 600;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
             .container-filter li a.active {
