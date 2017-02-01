@@ -106,7 +106,7 @@ a {
 }
 
     a:hover {
-        color: #e6ae49;
+        color: #2FC7AB;
         text-decoration: none;
         transition: all 0.25s ease 0s;
         -moz-transition: all 0.25s ease 0s;
@@ -201,7 +201,7 @@ p {
     }
 
     p.color, .color, a.color, h1.color, h2.color, h3.color, h4.color, h5.color, h6.color, li.link:hover, li.link a:hover, .color {
-        color: #e6ae49 !important;
+        color: #2FC7AB !important;
     }
 
 .gray {
@@ -226,7 +226,7 @@ p {
     }
 
         .dark-bg .link:hover, .link:hover {
-            color: #e6ae49;
+            color: #2FC7AB;
         }
 
 .gray-bg {
@@ -280,6 +280,17 @@ h1 {
     font-size: 43px;
     letter-spacing: 2px;
     line-height: 40px;
+}
+
+.headerhome{
+    font-size: 30px;
+    line-height: 50px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
 }
 
     h1.h1, h2.h2 {
@@ -468,7 +479,7 @@ button {
 
     .btn-color-line:hover {
         color: #fff;
-        background: #e6ae49;
+        background: #2FC7AB;
     }
 
 
@@ -498,7 +509,7 @@ button {
 }
 
     .btn-link-a:hover {
-        color: #e6ae49;
+        color: #2FC7AB;
         border-bottom: 1px solid #e6ae49;
     }
 
@@ -1180,7 +1191,7 @@ form label.error {
 
         .header.header-prepare .nav-menu ul.nav-menu-inner > li:hover > a,
         .header.header-prepare .nav-menu ul.nav-menu-inner > li > a:hover {
-            color: #e6ae49;
+            color: #2FC7AB;
         }
 
     .header.header-dark.header-prepare .nav-menu ul.nav-menu-inner > li > a {
@@ -1189,7 +1200,7 @@ form label.error {
 
         .header.header-dark.header-prepare .nav-menu ul.nav-menu-inner > li:hover > a,
         .header.header-dark.header-prepare .nav-menu ul.nav-menu-inner > li > a:hover {
-            color: #e6ae49;
+            color: #2FC7AB;
         }
 }
 
@@ -1603,13 +1614,13 @@ header.header-prepare .nav-bar-icon > span::after {
 
             .side-menu-btn ul > li > a:hover,
             .header.header-prepare .side-menu-btn ul > li > a:hover {
-                color: #e6ae49;
+                color: #2FC7AB;
             }
 
                 .side-menu-btn ul > li > a:hover span,
                 .side-menu-btn ul > li > a:hover span:before,
                 .side-menu-btn ul > li > a:hover span:after {
-                    background-color: #e6ae49;
+                    background-color: #2FC7AB;
                 }
 
         .side-menu-btn ul li a.header-icon {
@@ -1715,7 +1726,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
             }
 
                 .cart-dropdown .cart-list li > .close-cart-list:hover {
-                    color: #e6ae49;
+                    color: #2FC7AB;
                     background-image: none !important;
                 }
 
@@ -1749,7 +1760,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
             }
 
                 .cart-dropdown .cart-list .media a:hover {
-                    color: #e6ae49;
+                    color: #2FC7AB;
                 }
 
 .cart-dropdown {
@@ -1808,7 +1819,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 }
 
     .side-menu-btn-fix a:hover {
-        background: #e6ae49 none repeat scroll 0 0;
+        background: #2FC7AB none repeat scroll 0 0;
     }
 
 
@@ -2548,7 +2559,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 
         .side-menu .menu-close:hover {
             /*background: url("../img/close-color.png");*/
-            color: #e6ae49;
+            color: #2FC7AB;
         }
 
     .side-menu a {
@@ -2558,7 +2569,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     }
 
         .side-menu a:hover {
-            color: #e6ae49;
+            color: #2FC7AB;
         }
 
     .side-menu ul {
@@ -2604,7 +2615,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         }
 
             .side-menu .sign-in a:hover {
-                color: #e6ae49;
+                color: #2FC7AB;
                 text-decoration: underline;
             }
 
@@ -2720,7 +2731,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     }
 
         .search-overlay-menu .search-overlay-close:hover {
-            color: #e6ae49;
+            color: #2FC7AB;
             cursor: pointer;
         }
 
@@ -3297,7 +3308,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     }
 
         .widget-search input[type="submit"]:hover {
-            color: #e6ae49;
+            color: #2FC7AB;
         }
 
 .sidebar-widget hr {
@@ -3322,7 +3333,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         }
 
             .sidebar-widget ul li a:hover {
-                color: #e6ae49;
+                color: #2FC7AB;
             }
 
 .widget-tag {
@@ -3568,7 +3579,7 @@ ul.project-detail-block, .project-detail-block ul {
         }
 
             .item-nav .item-all-view h5:hover, .item-nav .item-all-view h6:hover {
-                color: #e6ae49;
+                color: #2FC7AB;
             }
 
         .item-nav .item-prev .prev-btn, .item-nav .item-next .next-btn, .item-all-view {
@@ -3890,7 +3901,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
     .shop-item-info a:hover, .shop-item-info a:hover h5, .shop-item-info a:hover h6, .shop-item-name:hover {
-        color: #e6ae49;
+        color: #2FC7AB;
         transition: all 0.25s ease 0s;
         -moz-transition: all 0.25s ease 0s;
         -webkit-transition: all 0.25s ease 0s;
@@ -4043,7 +4054,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
     .fullscreen-carousel .flex-direction-nav a:hover {
-        color: #e6ae49;
+        color: #2FC7AB;
     }
 
 .flexslider.fullscreen-carousel:hover .flex-prev {
@@ -4203,7 +4214,7 @@ ul.project-detail-block, .project-detail-block ul {
         .nf-carousel-theme .owl-controls .owl-buttons .owl-prev:hover,
         .nf-carousel-theme .owl-controls .owl-buttons .owl-next:hover {
             /*background: #fff;*/
-            color: #e6ae49;
+            color: #2FC7AB;
         }
 
     .content-carousel .owl-controls .owl-buttons .owl-next,
@@ -4461,7 +4472,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
     .scroll-top:hover {
-        background: #e6ae49;
+        background: #2FC7AB;
         text-decoration: none;
         color: #fff;
     }
@@ -4739,7 +4750,7 @@ Main components
   height: 60px;
   width: 50%;
   background: transparent;
-  border-right: 1px solid black;
+  border-right: 1px solid white;
 }
 
 @media (max-width: 768px) {
@@ -4758,7 +4769,6 @@ Main components
     border-color: #2FC7AB;
     padding: 9px 20px;
 }
-
 
 
 
