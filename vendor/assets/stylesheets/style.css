@@ -172,6 +172,7 @@ ul.text-cap li, .text-cap {
 }
 
 p {
+    font-family: 'Open Sans', sans-serif;
     line-height: 20px;
     font-size: 14px;
     font-weight: 300;
@@ -263,7 +264,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
     color: #323232;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -1182,7 +1183,7 @@ form label.error {
 
         .header.header-prepare .nav-menu ul.nav-menu-inner > li:hover > a,
         .header.header-prepare .nav-menu ul.nav-menu-inner > li > a:hover {
-            color: #e6ae49;
+            color: #2FC7AB;
         }
 
     .header.header-dark.header-prepare .nav-menu ul.nav-menu-inner > li > a {
@@ -1252,28 +1253,113 @@ form label.error {
         }
 
 .logo2 {
+    margin-top: 30px;
     float: right;
     text-align: right;
     display: inline-block;
 }
 
     .logo2 a {
-        width: 132px;
+        font-size: 9px !important;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 0px;
         display: block;
-        margin-top: 34px;
         /*margin-bottom: 28px;*/
 
         position: relative;
     }
 
-        .logo2 a img {
-            width: 25%;
-            position: absolute;
-            top: -10px;
-            left: 20px;
+    .logo2 i {
+      color: white;
+    }
 
-        }
 
+.logo3 {
+    margin-top: 30px;
+    margin-left: 20px;
+    float: right;
+    text-align: right;
+    display: inline-block;
+}
+
+    .logo3 a {
+      font-size: 9px !important;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: block;
+        /*margin-bottom: 28px;*/
+
+        position: relative;
+    }
+
+    .logo3 i {
+      color: white;
+    }
+
+
+.logo4 {
+    float: right;
+    text-align: right;
+    display: inline-block;
+    font-size: 15px;
+}
+    .logo4-txt {
+      color: white;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: block;
+      margin-top: 33px;
+      /*margin-bottom: 28px;*/
+
+      position: relative;
+    }
+
+.logo5 {
+    float: right;
+    text-align: right;
+    margin-top: 33px;
+    content: '';
+    height: 20px;
+    border-right: 1px solid white;
+}
+
+
+.logo6 {
+    margin-left: 20px;
+    float: right;
+    text-align: right;
+    display: inline-block;
+    font-size: 15px;
+}
+    .logo6-txt {
+      color: white;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: block;
+      margin-top: 33px;
+      /*margin-bottom: 28px;*/
+
+      position: relative;
+    }
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.col-b {
+  color: black !important;
+}
+
+.lignenoir {
+  border-right: 1px solid black;
+  margin-top: 22px;
+}
+
+.margin-top-20-black {
+  margin-top: 22px;
+  color: black !important;
+}
 
 /* Navigation Menu Style */
 /*------------------------------------------------------------------*/
@@ -1340,7 +1426,7 @@ form label.error {
 .header.header-dark .nav-menu ul.nav-menu-inner > li > a:hover,
 .header.header-dark.header-prepare .nav-menu ul.nav-menu-inner li a.current,
 .header.header-dark.header-prepare .nav-menu ul.nav-menu-inner li.current a {
-    color: #e6ae49;
+    color: #2FC7AB;
 }
 
 .header.header-light .nav-menu ul.nav-menu-inner > li:hover > a,

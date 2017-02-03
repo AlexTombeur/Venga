@@ -19,8 +19,8 @@
                 <!-- Logo -->
                 <div class="logo">
                    <%= link_to root_path do %>
-                  <img src="http://img11.hostingpics.net/pics/696329venga2.png", class="logo-dark", alt="Venga">
-                  <img src="http://img11.hostingpics.net/pics/696329venga2.png", class="logo-white", alt="Venga">
+                    <%= image_tag "venga1", class:"logo-white", alt:"Venga", id:"logo1" %>
+                    <%= image_tag "venga2", class:"logo-dark", alt:"Venga", id:"logo2" %>
                   <% end %>
                 </div>
                 <!-- End Logo -->
@@ -29,13 +29,25 @@
 
         <!-- CONTENT --------------------------------------------------------------------------------->
         <!-- Intro Section -->
-        <section class="inner-intro bg-image overlay-light parallax parallax-background1" data-background-img="http://www.be-venga.com/assets/banner1.jpg">
-            <div class="container">
-                <div class="row title">
-                    <h2 class="h2">Welcome Vengy</h2>
-                    <p class="dark">It's time to enjoy a unique sport experience with your coach</p>
+        <section id="intro">
+          <div class="flexslider fullscreen-carousel hero-slider-1 ">
+            <ul class="slides">
+
+              <!--Slide-->
+
+              <div class="slide-bg-image overlay-dark parallax parallax-section1" data-background-img="http://www.be-venga.com/assets/banner1.jpg">
+                <div class="js-Slide-fullscreen-height container">
+                  <div class="intro-content">
+                    <div class="intro-content-inner">
+                      <h2 class="h2">Welcome Vengy</h2>
+                      <p class="dark">It's time to enjoy a unique sport experience with your coach</p>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+
+            </ul>
+          </div>
         </section>
         <!-- End Intro Section -->
 

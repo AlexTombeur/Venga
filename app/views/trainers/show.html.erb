@@ -20,8 +20,8 @@
                 <!-- Logo -->
                 <div class="logo">
                   <%= link_to root_path do %>
-                  <img src="http://img11.hostingpics.net/pics/696329venga2.png", class="logo-dark", alt="Venga">
-                  <img src="http://img11.hostingpics.net/pics/696329venga2.png", class="logo-white", alt="Venga">
+                    <%= image_tag "venga1", class:"logo-white", alt:"Venga", id:"logo1" %>
+                    <%= image_tag "venga2", class:"logo-dark", alt:"Venga", id:"logo2" %>
                   <% end %>
                 </div>
                 <!-- End Logo -->
@@ -46,7 +46,7 @@
         <div class="col-md-4">
           <div class="team-item nf-col-padding">
             <div class="team-item-img">
-              <img src="<%= @trainer.picture %>"  alt="" />
+              <%= cl_image_tag @trainer.photo %>
             </div>
           </div>
         </div>

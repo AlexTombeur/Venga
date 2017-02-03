@@ -1,23 +1,19 @@
+
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-md-6 text-center">
-      <h5 class="no-margin font-alt">Filter by location</h5>
-      <div id="locationField" class="p-t-10 p-b-10">
-        <input id="trip_city" placeholder="Update search" type="text" />
-        <button id="btn-index-search-update" type="button" class="btn btn-g btn-sm">Search!</button>
-      </div>
+    <div class="col-md-6 col-md-offset-3">
+      <%= simple_form_for(@trainer) do |f| %>
+      <%= f.input :city %>
+      <%= f.input :description %>
+      <%= f.input :email %>
+      <%= f.input :phone %>
+      <%= f.input :name %>
+      <%= f.input :surname %>
+      <%= f.input :specialities %>
+      <%= f.input :photo %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <%= f.submit %>
+      <% end %>
     </div>
   </div>
 </div>
-
-
-
-<%= content_for(:after_js) do %>
-  <script src="https://maps.google.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"></script>
-<% end %>
-
-<%= simple_form_for :search,  url: trainers_path , :method => :get do |f| %>
-<%= f.input :address, class:"search-input input-md search-input mb-0", input_html: { class: :"address-search" }%>
-
-<%= f.button :submit %>
-<% end %>

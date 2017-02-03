@@ -1,4 +1,6 @@
 class Trainer < ApplicationRecord
+  mount_uploader :photo, PhotoUploader
+
   has_many :offers
   has_many :reviews
 
