@@ -78,6 +78,55 @@ $(function () {
 
         });
 
+        // FACEBOOK INSTAGRAM HEADER
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+              $('.logo2').addClass('margin-top-20');
+              $('.fa-facebook').addClass('col-b');
+            } else {
+              $('.logo2').removeClass('margin-top-20');
+              $('.fa-facebook').removeClass('col-b');
+            }
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+              $('.logo3').addClass('margin-top-20');
+              $('.fa-instagram').addClass('col-b');
+            } else {
+              $('.logo3').removeClass('margin-top-20');
+              $('.fa-instagram').removeClass('col-b');
+            }
+        });
+
+          // FR | EN
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+              $('.logo4-txt').addClass('margin-top-20-black');
+            } else {
+              $('.logo4-txt').removeClass('margin-top-20-black');
+            }
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+              $('.logo5').addClass('lignenoir');
+            } else {
+              $('.logo5').removeClass('lignenoir');
+            }
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+              $('.logo6-txt').addClass('margin-top-20-black');
+            } else {
+              $('.logo6-txt').removeClass('margin-top-20-black');
+            }
+        });
+
+
+
         $('.scroll-top').click(function () {
             $('html, body').animate({ scrollTop: 0 }, 800);
             return false;
