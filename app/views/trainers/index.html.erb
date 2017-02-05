@@ -65,7 +65,7 @@
                     <div class="col-md-4">
                       <div class="cover-box mb-30">
                         <figure class="cover-box-img">
-                          <img src="http://placehold.it/634x400" alt="cover-img">
+                          <%= cl_image_tag trainer.photo, alt:"cover-img" %>
                         </figure>
                         <div class="cover-box-content">
                           <h5><%= trainer.surname %> <%= trainer.name %></h5>

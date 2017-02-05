@@ -11,7 +11,7 @@ Offer.destroy_all
 Trainer.destroy_all
 
 
-valentina = Trainer.create!(name:"", surname:"Valentina", description:"Grâce à une double qualification de personal trainer (NASM) et de nutritioniste, Valentina a pour objectif de vous aider à trouver votre équilibre personnel. Quel que soit votre objectif, elle vous aidera à le réaliser.", address:"Bruxelles", email:"coaching@strongandfiercefitness.com", phone:"0472/67.36.39", specialities:"gainage fonctionnel fessiers nutrition", remote_photo_url:"http://www.coachsportifaix.fr/wp-content/uploads/256676_2074266252569_1122324755_32509506_5200571_o.jpg")
+valentina = Trainer.create!(name:"", surname:"Valentina", description:"Grâce à une double qualification de personal trainer (NASM) et de nutritioniste, Valentina a pour objectif de vous aider à trouver votre équilibre personnel. Quel que soit votre objectif, elle vous aidera à le réaliser.", address:"Bruxelles", email:"coaching@strongandfiercefitness.com", phone:"0472/67.36.39", specialities:"gainage fonctionnel fessiers nutrition", remote_photo_url:"http://res.cloudinary.com/dskagnrtl/image/upload/v1486284754/8qhrv-_dsvo-kaci-baum_mtpo4y.jpg")
 
 arvine = Trainer.create!(name:"", surname:"Arvine", description:"Titulaire d'un master en training (VUB) et d'une certification de coaching UEFA A, Arvine met à votre disposition son expérience personelle et professionelle pour vous permettre de dépasser vos limites.", address:"Bruxelles", email:"info@unboxtraining.com", phone:"0479/17.33.44", specialities:"gainage tractions pompes drapeau muscleups", remote_photo_url:"http://www.personal-sport-trainer.com/swc-content/uploads/2016/03/coach-sportif-a-domicile.jpg")
 
@@ -60,7 +60,6 @@ offer7 = Offer.create!(description:"Le Lorem Ipsum est simplement du faux texte 
 offer8 = Offer.create!(description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression", price:990, frequency:"week", trainer: Trainer.third)
 offer9 = Offer.create!(description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie", price:45, frequency:"hour", trainer: Trainer.third)
 
-
 offer10 = Offer.create!(description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie ", price:700, frequency:"hour", trainer: Trainer.last)
 offer11 = Offer.create!(description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression", price:90, frequency:"week", trainer: Trainer.last)
 offer12 = Offer.create!(description:"Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie", price:450, frequency:"hour", trainer: Trainer.last)
@@ -69,7 +68,6 @@ offer12 = Offer.create!(description:"Le Lorem Ipsum est simplement du faux texte
 review1 = Review.create!(description:"Parfait ! Valentina est un excellent coach et répond parfaitement à toutes mes attentes: il est très flexible et disponible (week-end, jours fériés, séances en soirée), il combine parfaitement détente, décontraction, écoute mais aussi rigueur et exigence dans les exercices.", client_name:"Gregory P", trainer: Trainer.first)
 review2 = Review.create!(description:"Parfait ! Ce n'était pas rien pour moi de décider de prendre un coach. Mais bon, il fallait faire le constat de toutes ces inscriptions à tous ces cours de gym non suivis, et puis la cinquantaine qui approche, et puis la fatigue, le surpoids, la sensation qu'on galope toujours après sa vie.... donc voilà.", client_name:"Tania P", trainer: Trainer.first)
 review3 = Review.create!(description:"Un vrai plaisir de travailler avec Valentina qui arrive même à me faire sourire en plein effort. Je reprends le sport avec plaisir et ce n'était pas gagné.. Le fait qu'une séance ne ressemble jamais à une autre y joue pour beaucoup.", client_name:"Amelie L", trainer: Trainer.first)
-
 
 review4 = Review.create!(description:"Que dire d'Arvine ? C'est un professeur remarquable avec beaucoup de bonne volonté. Il est a pour vous faire atteindre votre objectif et il va faire en sorte de vous faire réussir jusqu'au bout il vous soutien coûte que coûte.", client_name:"Youri D", trainer: Trainer.second)
 review5 = Review.create!(description:"Arvine est un coach sportif tres sympathique et bienveillant qui est de plus très à l écoute et patient, il motive beaucoup et encourage encore plus a se surpasser.", client_name:"Marine Z", trainer: Trainer.second)

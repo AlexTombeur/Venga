@@ -3,4 +3,9 @@ class PagesController < ApplicationController
     @contact = Contact.new
     @trainers = Trainer.all
   end
+
+  def en
+    @contact = Contact.new
+    @trainers = Trainer.all
+  end
 end

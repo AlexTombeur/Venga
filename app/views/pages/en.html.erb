@@ -1,154 +1,402 @@
-<!DOCTYPE html>
-<html>
+    <!-- Site Wraper -->
+    <div class="wrapper">
 
-  <% content_for :meta_title, "Venga - Find your personal trainer in Brussels !" %>
-  <% content_for :meta_description, "Venga connects you with personal trainers offering unique sport experiences in Brussels." %>
+        <!-- HEADER -->
+        <header id="header" class="header">
+            <div class="container">
 
-  <head>
-  </head>
+                <!-- Logo -->
+                <div class="logo">
+                  <%= link_to root_path do %>
+                  <%= image_tag "venga1", class:"logo-white", alt:"Venga", id:"logo1" %>
+                  <%= image_tag "venga2", class:"logo-dark", alt:"Venga", id:"logo2" %>
+                  <% end %>
 
-  <body>
-    <div class="banner-top">
-      <div class="background">
-        <div class="lang list-inline">
-          <div>
-            <a href="http://www.be-venga.com/" class="french">
-              <%= image_tag("frflag.png", :alt => "rss feed", :height => "90%", :width => "20%") %>
-            </a>
-          </div>
-
-            <div id="nav-button" class="fb-like" data-href="https://www.facebook.com/bevenga/" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="false"></div>
-        </div>
-
-        <div class="title row">
-          <div class="col-md-offset-6 col-lg-offset-6 col-sm-offset-5 col-xs-offset-5 col-md-5 col-lg-5 col-sm-6 col-xs-6">
-            <div class="row img1">
-              <%= image_tag("LogoVenga11.png", :alt => "rss feed", :height => "100%", :width => "100%") %>
-            </div>
-            <div class="row subtitle">
-              <h1>
-                Planning your next workout should be <span style="color: #2FC7AB"> easy</span>.
-              </h1>
-              <a href="http://www.be-venga.com/trainers" class="find-btn btn hvr-grow">Discover our trainers !</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="vp">
-      <div class=" sub-title text-center">
-        <p>Venga connects you with personal trainers offering sporting activities in Brussels.</p>
-      </div>
-      <div class="mock">
-        <%= image_tag("Background101", :alt => "rss feed", :height => "100%", :width => "100%") %>
-      </div>
-    </div>
-
-    <div class="cont">
-      <div class="row">
-        <div class="card1 col-md-4">
-          <div class="imag1">
-            <%= image_tag("find41.png", :alt => "rss feed", :height => "28px", :width => "28px") %>
-          </div>
-          <div class="card-expl">
-            <h3>Find your next sporting activity. </h3>
-          </div>
-        </div>
-
-        <div class="card1 col-md-4">
-          <div class="imag2">
-            <%= image_tag("tick1.png", :alt => "rss feed", :height => "28px", :width => "28px") %>
-          </div>
-          <div class="card-expl">
-            <h3>Book it directly or contact your coach for more info.</h3>
-          </div>
-        </div>
-        <div class="card1 col-md-4">
-          <div class="imag2">
-            <%= image_tag("heart11.png", :alt => "rss feed", :height => "28px", :width => "28px") %>
-          </div>
-          <div class="card-expl">
-            <h3>Take up your next challenge and enjoy the ride !</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="background2"></div>
-
-    <div class="banner-middle">
-      <div class="row">
-        <div class="img2 col-md-6 col-lg-6 col-sm-12 col-xs-12">
-          <%= image_tag("mock-up121.png", :alt => "rss feed", :height => "100%", :width => "100%") %>
-        </div>
-        <div class="argu1 col-md-5 col-lg-5 col-sm-12 col-xs-12">
-          <div class="boost">
-            <h2>Enjoy your workout, reach your <span style="color: #2FC7AB">objectives.</span></h2>
-          </div>
-          <p><strong>Sporties</strong> can now enjoy unique sport experiences. Exercising with the Venga Community will take your motivation as high as your objectives. </p>
-            <a href="#signup_mailchimp" class="btn prime-btn hvr-buzz-out">Join as a Sporty</a>
-          <div class="argu2">
-            <p><strong>Trainers</strong> are sport experts willing to help other sporties reaching their objectives. Turning your passion into a profitable activity is now possible. </p>
-            <a href="#signup_mailchimp" class="btn prime-btn hvr-buzz-out">Join as a Trainer</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="back">
-      <div class="form" id="signup_mailchimp">
-        <div class="title2 text-center">
-          <h3>Join us now and be one of the first members to test the plaftorm !</h3>
-        </div>
-
-        <div class="text-center">
-
-          <!-- Begin MailChimp Signup Form -->
-            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-              #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif;  width:400px;}
-              /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-            <div id="mc_embed_signup">
-            <form action="//be-venga.us14.list-manage.com/subscribe/post?u=ce639eb024159bf1e699a6211&amp;id=155075fc44" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-
-            <div class="mc-field-group">
-              <label for="mce-EMAIL">Email Address </label>
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="hello@be-venga.com">
-            </div>
-            <div class="mc-field-group input-group">
-                <p class="Iamm">I am interested to join as a: </p>
-                <ul><li><input type="radio" value="1" name="group[1817]" id="mce-group[1817]-1817-0"><label for="mce-group[1817]-1817-0">Sporty</label></li>
-            <li><input type="radio" value="2" name="group[1817]" id="mce-group[1817]-1817-1"><label for="mce-group[1817]-1817-1">Trainer</label></li>
-            <li><input type="radio" value="4" name="group[1817]" id="mce-group[1817]-1817-2"><label for="mce-group[1817]-1817-2">Both</label></li>
-            </ul>
-            </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ce639eb024159bf1e699a6211_155075fc44" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Join us !" name="subscribe"  class="buton hvr-buzz-out"></div>
                 </div>
-            </form>
+
+                <div class="logo4">
+                  <a href="http://www.be-venga.com/en">
+                    <p class="logo4-txt">EN</p>
+                  </a>
+                </div>
+                <div class="logo5">
+                  <a href="">
+                  </a>
+                </div>
+                <div class="logo6">
+                  <a href="http://www.be-venga.com">
+                    <p class="logo4-txt">FR</p>
+                  </a>
+                </div>
+                <div class="logo2">
+                  <a href="http://www.be-venga.com/en">
+                    <i class="fa fa-3x fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="logo3">
+                  <a href="http://www.be-venga.com/en">
+                    <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+
+                <!-- End Logo -->
+
+
+                <!-- Navbar Navigation -->
+                <div class="nav-menu singlepage-nav">
+                    <ul class="nav-menu-inner">
+                        <li>
+                            <a class="" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="" href="#media">Media</a>
+                        </li>
+                        <li>
+                            <a class="" href="#contact-section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Navbar Navigation -->
+
             </div>
-            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-            <!--End mc_embed_signup-->
+        </header>
+        <!-- END HEADER -->
 
+        <!-- CONTENT --------------------------------------------------------------------------------->
+
+        <!-- Intro Section -->
+        <section id="intro">
+            <!-- Hero Slider Section -->
+            <div class="flexslider fullscreen-carousel hero-slider-1 ">
+                <ul class="slides">
+
+                    <!--Slide-->
+
+                        <div class="slide-bg-image overlay-dark parallax parallax-section1" data-background-img="http://www.be-venga.com/assets/Home1.jpg">
+                            <div class="js-Slide-fullscreen-height container">
+                                <div class="intro-content">
+                                    <div class="intro-content-inner">
+                                        <h1 class="headerhome"><span style="color:#2FC7AB; font-weight:800;">Rediscover Sport.</span> Find your personal trainer in Brussels and take up your next challenge.</h1>
+                                          <div class="container text-center">
+                                            <div class="row text-center">
+                                              <div class="col-md-8 col-md-offset-2">
+                                              <%= link_to "Discover our trainers", trainers_path, class: "btn btn-lg btn-green-line" %>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </ul>
+            </div>
+            <!-- End Hero Slider Section -->
+        </section>
+        <!-- End Intro Section -->
+
+        <div class="clearfix"></div>
+
+        <!--About Section-->
+        <section id="about" class="wow fadeIn ptb ptb-sm-80">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="h4">Venga. Anywhere. Anytime</h3>
+                        <div class="vertical-lign"></div>
+                        <div class="spacer-15"></div>
+                        <p class="lead">Venga is the first universal sport subscription in Brussels. It allows you to experience unique sporting activities offered by certified trainers wherever you are, at your best convenience.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section-->
+
+
+        <section id="how-it-works" class="bg-img1 overlay-dark80 dark-bg ptb ptb-sm-80">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <h3>Planning your next workout should be easy</h3>
+              </div>
+            </div>
+            <div class="spacer-60"></div>
+            <div class="vertical-lign"></div>
+            <div class="spacer-60"></div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 mb-45">
+              <div class="page-icon-top"><i class="ion ion-ios-search"></i></div>
+                <h5>Find your next sporting activity</h5>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-45">
+                <div class="page-icon-top"><i class="ion ion-android-done"></i></div>
+                <h5>Meet your trainer and book your session</h5>
+              </div>
+              <div class="col-md-4 col-sm-6 mb-45">
+                <div class="page-icon-top"><i class="ion ion-ios-heart-outline"></i></div>
+                <h5>Take up the challenge and enjoy the ride</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <hr />
+
+        <section id="success-formula" class="pt ptb-sm-80">
+          <div class="container text-center">
+            <div class="row text-center">
+              <div class="col-md-8 col-md-offset-2">
+                <h3 class="h4">Offer</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="cd-timeline" class="cd-container">
+
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture">
+              <img src="http://www.icone-png.com/png/16/16172.png" alt="">
+            </div> <!-- cd-timeline-img -->
+            <div class="cd-timeline-content">
+              <h4>QUALITY</h4>
+              <p>Certified trainers</p>
+            </div> <!-- cd-timeline-content -->
+          </div> <!-- cd-timeline-block -->
+
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie">
+              <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/43170-200.png" alt="">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+              <h4>FLEXIBILITY</h4>
+              <p>Universal subscription</p>
+            </div> <!-- cd-timeline-content -->
+          </div>
+
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie">
+              <img src="https://www.kjmagnetics.com/images/safetyicon_heart.png" alt="">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+              <h4>SAFETY</h4>
+              <p>Medical tracking</p>
+            </div> <!-- cd-timeline-content -->
+          </div>
+          <!-- cd-timeline-block -->
+        </section>
+        <div class="container text-center">
+          <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2">
+            <%= link_to "Discover our trainers", trainers_path, class: "btn btn-lg btn-green-line" %>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </body>
 
+
+        <br>
+
+         <!-- End TIMELINE Section-->
+
+
+        <hr />
+
+        <!-- Client Logos Section -->
+        <section id="media" class="wow fadeIn ptb ptb-sm-80">
+            <div class="container text-center">
+                <h3>They talk about us</h3>
+            </div>
+            <div class="spacer-60"></div>
+            <div class="container">
+                <div class="owl-carousel client-carousel nf-carousel-theme ">
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="client-logo">
+                            <img src="http://placehold.it/115x80" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Client Logos Section -->
+        <hr>
+
+
+
+          <!-- Contact Section -->
+
+        <section id="contact-section" class="bg-img2 dark-bg ptb ptb-sm-80">
+          <div class="container text-center">
+               <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h3>Get In Touch</h3>
+                    </div>
+                </div>
+                <div class="spacer-75"></div>
+                <div class="row">
+                    <div class="col-md-5 contact">
+                        <div class="contact-box-left mb-45">
+                            <div class="contact-icon-left"><i class="fa fa-envelope-o"></i></div>
+                            <h6>alexandre.tombeur@gmail.com</h6>
+                        </div>
+                        <div class="contact-box-left mb-45">
+                            <div class="contact-icon-left"><i class="fa fa-phone"></i></div>
+                            <h6>+32(0)498/26.58.23</h6>
+                        </div>
+                        <div class="contact-box-left mb-45">
+                            <div class="contact-icon-left"><i class="fa fa-facebook-official"></i></div>
+                            <h6>bevenga</h6>
+                        </div>
+                        <div class="contact-box-left mb-45">
+                            <div class="contact-icon-left"><i class="fa fa-instagram"></i></div>
+                            <h6>+@_venga</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1">
+                      <!-- Contact FORM -->
+                      <form class="contact-form" id="contact" role="form">
+                        <%= simple_form_for @contact, :html => {:class => 'contact-form' } do |f| %>
+
+                        <div class="form-field-wrapper">
+                        <%= f.input :name, class: "input-sm form-full", placeholder:"Your Name", :required => true, label: false %>
+                        </div>
+                        <div class="form-field-wrapper">
+                        <%= f.input :email, class: "input-sm form-full", placeholder:"Email", :required => true, label: false %>
+                        </div>
+                        <div class="form-field-wrapper">
+                        <%= f.input :description, class:"form-full", placeholder:"Your Message", as: :text, :required => true, label: false %>
+                        </div>
+
+                        </br>
+                        <%= f.button :submit, 'Send message', :class=> "btn btn-md btn-green" %>
+                      </div>
+                      <% end %>
+
+                      <!-- IF MAIL SENT SUCCESSFULLY -->
+                      <h6 class="successContent">
+                        <i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
+                      </h6>
+                      <!-- END IF MAIL SENT SUCCESSFULLY -->
+
+                      <!-- MAIL SENDING UNSUCCESSFULL -->
+                      <h6 class="errorContent">
+                        <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
+                      </h6>
+                      <!-- END MAIL SENDING UNSUCCESSFULL -->
+
+                    </form>
+                    <!-- END Contact FORM -->
+                  </div>
+                </div>
+          </div>
+        </section>
+
+         <!-- End Contact Section -->
+
+
+
+        <!-- END CONTENT ---------------------------------------------------------------------------->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+
+    </div>
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+<%= content_for(:after_js) do %>
+  <script src="https://maps.google.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}"></script>
+<% end %>
+
+
+
+
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+    $('.singlepage-nav').singlePageNav({
+            offset: 0,
+            filter: ':not(.external)',
+            updateHash: true,
+            currentClass: 'current',
+            easing: 'swing',
+            speed: 750,
+            beforeStart: function () {
+                if ($(window).width() < 991) {
+                    $('.singlepage-nav > ul').hide();
+                };
+            },
+            onComplete: function () {
+                console.log('done scrolling');
+            }
+        });
+  <% end %>
+<% end %>
+
+
+<% content_for(:js) do %>
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-89250384-1', 'auto');
-  ga('send', 'pageview');
+    $(document).ready(function() {
+
+
+      $('#btn-index-search-update').click(function(){
+        var input = $('#trip_city').val()
+        window.location.href = '/trips/search?trip%5Bcity%5D=' + input;
+      });
+
+
+    });
   </script>
-</html>
+<% end %>
+
