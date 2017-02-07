@@ -11,7 +11,7 @@ Offer.destroy_all
 Trainer.destroy_all
 
 
-valentina = Trainer.create!(name:"", surname:"Valentina", description:"Grâce à une double qualification de personal trainer (NASM) et de nutritioniste, Valentina a pour objectif de vous aider à trouver votre équilibre personnel. Quel que soit votre objectif, elle vous aidera à le réaliser.", address:"Bruxelles", email:"coaching@strongandfiercefitness.com", phone:"0472/67.36.39", website: "www.hello.com", specialities:"fonctionnel musculation gainage nutrition", remote_photo_url:"http://res.cloudinary.com/dskagnrtl/image/upload/v1486386332/16602763_777409769079581_6559696275705903621_n_zjdsh4.jpg")
+valentina = Trainer.create!(name:"", surname:"Valentina", description:"Grâce à une double qualification de personal trainer (NASM) et de nutritioniste, Valentina a pour objectif de vous aider à trouver votre équilibre personnel. Quel que soit votre objectif, elle vous aidera à le réaliser.", address:"Bruxelles", email:"coaching@strongandfiercefitness.com", phone:"0472/67.36.39", specialities:"fonctionnel musculation gainage nutrition", remote_photo_url:"http://res.cloudinary.com/dskagnrtl/image/upload/v1486386332/16602763_777409769079581_6559696275705903621_n_zjdsh4.jpg")
 
 arvine = Trainer.create!(name:"", surname:"Arvine", description:"Titulaire d'un master en training (VUB) et d'une certification de coaching UEFA A, Arvine met à votre disposition son expérience personelle et professionelle pour vous permettre de dépasser vos limites.", address:"Bruxelles", email:"info@unboxtraining.com", phone:"0479/17.33.44", specialities:"gainage tractions pompes drapeau muscleups", remote_photo_url:"http://res.cloudinary.com/dskagnrtl/image/upload/v1486387506/15823259_1713482625633135_2679112152628566904_n_yssbfd.jpg")
 
