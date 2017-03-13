@@ -2932,7 +2932,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     }
 
     .overlay-dark80:before {
-        background-color: rgba(32,32,32,0.8);
+        background-color: rgba(32,32,32,0.5);
     }
 
     .overlay-light:before {
